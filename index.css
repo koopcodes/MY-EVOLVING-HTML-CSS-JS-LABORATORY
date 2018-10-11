@@ -2,3 +2,9 @@ body {
             font-family: 'Inconsolata', serif;
             text-shadow: 1px 1px 1px #aaa;
         }
+
+#fm-medium-embed {
+	width: 50%;
+	padding: 20px;
+	margin: 20px;
+}
