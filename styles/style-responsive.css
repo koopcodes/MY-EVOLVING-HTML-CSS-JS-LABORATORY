@@ -1,0 +1,163 @@
+@media (min-width: 768px) {
+	.input-split {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+	}
+	.input-split input {
+		display: inline-block;
+		width: 50%;
+	}
+	.input-split input:first-child {
+		margin-right: 3px;
+	}
+	.input-split input:last-child {
+		margin-left: 3px;
+	}
+}
+@media (min-width: 992px) {
+	.nav-item:last-child .dropdown-menu {
+		right: 0;
+		left: auto;
+	}
+	.portfolio-item {
+		width: 33.333%;
+	}
+	.blog-post-box {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		margin-bottom: 30px;
+	}
+	.blog-img,
+	.blog-content {
+		display: inline-block;
+		width: 50%;
+	}
+	.blog-img {
+		padding-right: 15px;
+	}
+	.blog-content {
+		margin: auto 0;
+		padding-left: 15px;
+	}
+}
+@media (max-width: 992px) {
+	h1 {
+		font-size: 42px;
+		line-height: 56px;
+	}
+	.toggle-btn {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.nav {
+		position: fixed;
+		top: 90px;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+		background: #fff;
+		width: 100%;
+		padding: 30px 20px;
+		border-bottom: 1px solid #ebebeb;
+		-webkit-transition: ease-out 0.2s;
+		transition: ease-out 0.2s;
+	}
+	.navbar-shrink .nav {
+		top: 60px;
+	}
+	.navbar-dark .nav {
+		background: #141414;
+	}
+	.navbar-transparent .nav {
+		background: rgba(255, 255, 255, 0.9);
+	}
+	.navbar-transparent.navbar-dark .nav {
+		background: rgba(0, 0, 0, 0.9);
+	}
+	.nav-show {
+		visibility: visible;
+		opacity: 1;
+	}
+	.nav-item {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.nav-item:last-child {
+		margin: 0;
+	}
+	.nav-link {
+		display: inline-block;
+	}
+	.dropdown-menu {
+		top: 25px;
+	}
+	.portfolio-item {
+		width: 50%;
+	}
+	.blog-post-box {
+		margin-bottom: 60px;
+	}
+	.blog-img {
+		margin-bottom: 30px;
+	}
+	.pricesWrapper {
+		margin-bottom: -30px;
+	}
+	.prices-box {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 768px) {
+	h1 {
+		font-size: 36px;
+		line-height: 50px;
+	}
+	.container {
+		padding: 0 20px;
+	}
+	.container.align-left .scroll-down-button {
+		left: 20px;
+	}
+	.container.align-right .scroll-down-button {
+		right: 20px;
+	}
+	.about-box {
+		margin-bottom: 30px;
+	}
+	.about-box:last-child {
+		margin: 0;
+	}
+	.portfolio-item {
+		width: 100%;
+	}
+	.team-box {
+		margin-bottom: 30px;
+	}
+	.team-box:last-child {
+		margin: 0;
+	}
+	.contact-info-box {
+		margin-bottom: 30px;
+	}
+	.contact-info-box:last-child {
+		margin: 0;
+	}
+	.submit-result {
+		bottom: -30px;
+		width: 100%;
+		text-align: center;
+	}
+	.submit-result span {
+		position: absolute;
+		top: 0;
+		display: block;
+		width: 100%;
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "koopfolio",
+  "version": "1.0.0",
+  "description": "Koopz Professional Portflio Site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY.git"
+  },
+  "keywords": [
+    "Koop",
+    "koop",
+    "portfolio",
+    "KoopCodes"
+  ],
+  "author": "koop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY/issues"
+  },
+  "homepage": "https://github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY#readme"
+}
