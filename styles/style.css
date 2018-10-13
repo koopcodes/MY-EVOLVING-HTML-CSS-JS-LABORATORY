@@ -255,7 +255,7 @@ blockquote footer::before {
 	text-align: center;
 }
 .transparent-background-light {
-	background: rgba(255, 255, 255, 0.88);
+	background: rgba(255, 255, 255, 0.8);
 }
 .border-top {
 	border-top: 1px solid #ebebeb;

@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY/issues"
   },
-  "homepage": "https://github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY#readme"
+  "homepage": "https://github.com/koopdev/MY-EVOLVING-HTML-CSS-JS-LABORATORY#readme",
+  "dependencies": {
+    "typed.js": "^2.0.9"
+  }
 }
