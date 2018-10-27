@@ -1571,8 +1571,8 @@ footer .background-solid-dark {
 }
 
 .spinner {
-	width: 140px;
-	height: 140px;
+	width: 80px;
+	height: 80px;
 	position: absolute;
 	top: 48%;
 	left: 48%;
@@ -1589,13 +1589,14 @@ footer .background-solid-dark {
 	display: inline-block;
 	position: absolute;
 	top: 0;
-	background-color: #1616f3;
+	background-color: #aaaaaa;
 	border-radius: 100%;
 	-webkit-animation: sk-bounce 2s infinite ease-in-out;
 	animation: sk-bounce 2s infinite ease-in-out;
 }
 
 .dot2 {
+	background-color: #000000;
 	top: auto;
 	bottom: 0;
 	-webkit-animation-delay: -1s;
@@ -1642,7 +1643,7 @@ footer .background-solid-dark {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #cccccc;
+	background-color: #ffffff;
 	z-index: 999999;
 }
 
