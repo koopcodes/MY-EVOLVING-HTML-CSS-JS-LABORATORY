@@ -1,12 +1,10 @@
-// import { join } from 'lodash';
 
-// function component() {
-//   let element = document.createElement('div');
+$(function(){
+  var $readMoreLink = $(".read-more");
 
-//   // Lodash, currently included via a script, is required for this line to work
-//   element.innerHTML = join(['Hello', 'webpack'], ' ');
-
-//   return element;
-// }
-
-// document.body.appendChild(component());
+  $readMoreLink.on("click", function(e){
+    e.preventDefault();
+    $(this).parent().next("div").show();
+    $(this).remove();
+  });
+});
