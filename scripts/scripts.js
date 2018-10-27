@@ -1,7 +1,14 @@
+preloaderFadeOutTime = 500;
+
 $(function() {
 	'use strict';
 	$(window).on('load', function() {
 		$('body').addClass('loaded');
+		function hidePreloader() {
+			var preloader = $('.spinner-wrapper');
+			preloader.fadeOut(preloaderFadeOutTime);
+		}
+		hidePreloader();
 	});
 
 	$('body').scrollspy({ target: '.nav', offset: 65 });
