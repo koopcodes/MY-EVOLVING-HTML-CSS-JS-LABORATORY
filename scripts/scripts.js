@@ -3,39 +3,7 @@ $(function() {
 	$(window).on('load', function() {
 		$('body').addClass('loaded');
 	});
-	if ($('body').attr('data-preloader') === '1') {
-		var loaderData1 = "<div class='preloader'><div><span class='spinner'></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData1;
-	} else if ($('body').attr('data-preloader') === '2') {
-		var loaderData2 = "<div class='preloader'><div><span></span><span></span><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData2;
-	} else if ($('body').attr('data-preloader') === '3') {
-		var loaderData3 = "<div class='preloader'><div><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData3;
-	} else if ($('body').attr('data-preloader') === '4') {
-		var loaderData4 = "<div class='preloader'><div><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData4;
-	} else if ($('body').attr('data-preloader') === '5') {
-		var loaderData5 = "<div class='preloader'><div><span></span><span></span><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData5;
-	} else if ($('body').attr('data-preloader') === '6') {
-		var loaderData6 = "<div class='preloader'><div><span></span><span></span><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData6;
-	} else if ($('body').attr('data-preloader') === '7') {
-		var loaderData7 = "<div class='preloader'><div><span></span><span></span><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData7;
-	} else if ($('body').attr('data-preloader') === '8') {
-		var loaderData8 = "<div class='preloader'><div><span class='spinner-box'><span></span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData8;
-	} else if ($('body').attr('data-preloader') === '9') {
-		var loaderData9 =
-			"<div class='preloader'><div><span></span><span></span><span></span><span></span><span></span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData9;
-	} else if ($('body').attr('data-preloader') === '10') {
-		var loaderData10 =
-			"<div class='preloader'><div><span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span></div></div>";
-		document.getElementById('preloader').innerHTML = loaderData10;
-	}
+
 	$('body').scrollspy({ target: '.nav', offset: 65 });
 	var navbar = $('.navbar');
 	$(window).on('scroll', function() {
@@ -73,7 +41,11 @@ $(function() {
 	var htmlBody = $('html,body');
 	var smoothLinks = $('.nav li a, .home-middle-content a, .scroll-down-button');
 	smoothLinks.on('click', function(e) {
-		htmlBody.animate({ scrollTop: $(this.hash).offset().top - 60 }, 800, 'easeInOutQuart');
+		htmlBody.animate(
+			{ scrollTop: $(this.hash).offset().top - 60 },
+			800,
+			'easeInOutQuart'
+		);
 		e.preventDefault();
 	});
 	var goTopButton = '.go-top-button';
@@ -97,7 +69,7 @@ $(function() {
 			backSpeed: 50,
 			loop: true,
 			loopCount: Infinity,
-			});
+		});
 	});
 	$('#facts').appear(
 		function() {
@@ -113,11 +85,11 @@ $(function() {
 							step: function(now) {
 								$(this).text(Math.ceil(now));
 							},
-						},
+						}
 					);
 			});
 		},
-		{ accX: 0, accY: -10 },
+		{ accX: 0, accY: -10 }
 	);
 	$('#portfolio').imagesLoaded(function() {
 		var $portfolioWrapper = $('.portfolioWrapper').isotope({
@@ -132,7 +104,12 @@ $(function() {
 			$(this).addClass('active');
 		});
 	});
-	$('.portfolio-hover').magnificPopup({ type: 'inline', fixedContentPos: false, removalDelay: 200, preloader: false });
+	$('.portfolio-hover').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		removalDelay: 200,
+		preloader: false,
+	});
 	var popupYoutube = $('.popup-youtube');
 	var youtubeSrc = popupYoutube.attr('data-youtube-src');
 	popupYoutube.magnificPopup({
@@ -141,7 +118,12 @@ $(function() {
 		fixedContentPos: false,
 		removalDelay: 200,
 		preloader: false,
-		iframe: { patterns: { youtube: { index: 'youtube.com/', id: 'v=', src: youtubeSrc } }, srcAction: 'iframe_src' },
+		iframe: {
+			patterns: {
+				youtube: { index: 'youtube.com/', id: 'v=', src: youtubeSrc },
+			},
+			srcAction: 'iframe_src',
+		},
 	});
 	var popupVimeo = $('.popup-vimeo');
 	var vimeoSrc = popupVimeo.attr('data-vimeo-src');
@@ -151,7 +133,10 @@ $(function() {
 		fixedContentPos: false,
 		removalDelay: 200,
 		preloader: false,
-		iframe: { patterns: { vimeo: { index: 'vimeo.com/', id: '/', src: vimeoSrc } }, srcAction: 'iframe_src' },
+		iframe: {
+			patterns: { vimeo: { index: 'vimeo.com/', id: '/', src: vimeoSrc } },
+			srcAction: 'iframe_src',
+		},
 	});
 	$('#testimonialSlider').owlCarousel({
 		items: 1,
@@ -173,7 +158,13 @@ $(function() {
 		autoplayHoverPause: true,
 		autoplayTimeout: 4000,
 		autoplaySpeed: 300,
-		responsive: { 0: { items: 1 }, 576: { items: 2 }, 768: { items: 3 }, 992: { items: 4 }, 1200: { items: 5 } },
+		responsive: {
+			0: { items: 1 },
+			576: { items: 2 },
+			768: { items: 3 },
+			992: { items: 4 },
+			1200: { items: 5 },
+		},
 	});
 	$('#contactform').on('submit', function(e) {
 		var name = $('#name').val();

@@ -1555,7 +1555,7 @@ footer .background-solid-dark {
 .background-solid-dark .footerWrapper ul li a:focus {
 	color: #fff;
 }
-#preloader {
+/* #preloader {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1569,7 +1569,7 @@ footer .background-solid-dark {
 .loaded #preloader {
 	opacity: 0;
 	visibility: hidden;
-}
+} */
 .owl-dots {
 	margin-top: 20px;
 	line-height: 7px;
