@@ -3,7 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
-	entry: './src/index.js',
+	mode: 'production',
+	entry: './src/app.js',
 	output: {
 		path: __dirname + '/dist',
 		filename: 'bundle.js',
@@ -30,7 +31,7 @@ module.exports = {
 						options: {
 							// you can specify a publicPath here
 							// by default it use publicPath in webpackOptions.output
-							publicPath: '../',
+							// publicPath: '../',
 						},
 					},
 					'css-loader',
@@ -47,10 +48,12 @@ module.exports = {
 			},
 			{
 				test: /\.(otf|ttf|eot|woff|woff2)$/,
-				loader: 'file-loader',
-				options: {
-					name: 'public/fonts/[name].[ext]',
-					outputPath: 'dist/fonts',
+				use: {
+					loader: 'url-loader',
+					options: {
+						name: 'fonts/[name].[ext]',
+						outputPath: 'dist/fonts',
+					},
 				},
 			},
 		],
@@ -69,6 +72,12 @@ module.exports = {
 			filename: './index.html',
 			hash: true,
 		}),
+
+		// new webpack.ProvidePlugin({
+		//   $: 'jquery',
+		//   jQuery: 'jquery',
+		//   'window.jQuery': 'jquery'
+		//   }),
 	],
 
 	devServer: {
@@ -80,6 +89,15 @@ module.exports = {
 		overlay: {
 			warnings: false,
 			errors: true,
+		},
+	},
+
+	resolve: {
+		alias: {
+			jquery: path.resolve(
+				__dirname,
+				'./node_modules/jquery/dist/jquery.min.js'
+			),
 		},
 	},
 };
