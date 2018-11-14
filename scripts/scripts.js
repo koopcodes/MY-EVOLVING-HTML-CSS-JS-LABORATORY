@@ -70,9 +70,9 @@ $(function() {
 	$(window).on('load', function() {
 		var typed = new Typed('#typed', {
 			stringsElement: '#typed-strings',
-			startDelay: 100,
+			startDelay: 0,
 			typeSpeed: 100,
-			backDelay: 400,
+			backDelay: 100,
 			backSpeed: 50,
 			loop: true,
 			loopCount: Infinity,
